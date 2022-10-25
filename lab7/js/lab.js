@@ -9,7 +9,7 @@
 
 function sortUserName() {
   //ask for user name
-  var userName = window.promt("Enter your name.");
+  var userName = window.prompt("Enter your name.");
   //split users name, sort the letters, and join them as one string
   return userName.toLower().split('').sort().join('');
 }
