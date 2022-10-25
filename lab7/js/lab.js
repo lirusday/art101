@@ -8,10 +8,19 @@
 //Function
 
 function sortUserName() {
-  //ask for user name
   var userName = window.prompt("Enter your name.");
-  //split users name, sort the letters, and join them as one string
-  return userName.toLower().split('').sort().join('');
+  console.log("userName =", userName);
+  //split string into letters in array
+  var nameArray = userName.split('');
+  console.log("nameArray =", nameArray);
+  //sort array
+  var arraySort = nameArray.sort();
+  console.log("arraySort =", arraySort);
+  //join array
+  var nameJoin = arraySort.join('');
+  console.log("nameJoin =", nameJoin);
+  //return sorted name
+  return nameJoin;
 }
 
 //Output
