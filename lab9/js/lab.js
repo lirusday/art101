@@ -1,6 +1,6 @@
 /**
  * Author: Daniel Shim
- * Created: 10.27.2022
+ * Created: 11.1.2022
  *
  * (c) Copyright by Daniel Shim
  **/
@@ -21,3 +21,13 @@ new2El.innerHTML = "This is another new paragraph element.";
 //append elements
 outputEl.appendChild(new1El);
 outputEl.appendChild(new2El);
+
+//TASK X 2: use of doctype
+var new3El = document.createElement("p");
+new3El.innerHTML = "This document type is: " + document.doctype;
+outputEl.appendChild(new3El);
+
+//TASK X 3: use of domain
+var new4El = document.createElement("p");
+new4El.innerHTML = "This domain name is: " + document.domain;
+outputEl.appendChild(new4El);
