@@ -22,4 +22,3 @@
    //return sorted name
    document.getElementById("output").innerHTML = nameJoin;
  }
- 
