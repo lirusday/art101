@@ -5,10 +5,6 @@
  * (c) Copyright by Daniel Shim
  **/
 
-//Variables
-
-var comicObj;
-
 //Functions
 
 $.ajax({
@@ -16,10 +12,8 @@ $.ajax({
     type: "GET",
     data: { get_param: 'value' },
     dataType: "json",
-    success: function(data) {
-        comicObj = data;
+    success: function(comicObj) {
+      $("#output").append("<h1>" + comicObj.title + "</h1>");
+      $("#output").append("<img src=\"" + comicObj.img + "\" alt=\""+ comicObj.alt +"\">");
     }
 })
-
-$("#output").append("<h1>" + comicObj.title + "</h1>");
-$("#output").append("<img src=\"" + comicObj.img + "\" alt=\""+ comicObj.alt +"\">");
