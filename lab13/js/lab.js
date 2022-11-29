@@ -5,6 +5,8 @@
  * (c) Copyright by Daniel Shim
  **/
 
+//create function
+
 function fizzBuzz() {
   for (var num = 0; num < 200; num++) {
     var out = "";
@@ -23,6 +25,8 @@ function fizzBuzz() {
     $("#output").append("<p>" + num.toString() + out + "</p>");
   }
 }
+
+//add event listener
 
 $("#submit").click(function() {
   fizzBuzz();

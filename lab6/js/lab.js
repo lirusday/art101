@@ -12,11 +12,10 @@ myMainRide = {
   make: "Volkswagen",
   model: "Beetle",
   color: "Silver",
-  year: 2017,
-  age: function() {
-    return 2022 - year;
-  }
+  year: 2017
 }
+
+myMainRide["age"] = 2022 - myMainRide["year"];
 
 // Output
 
